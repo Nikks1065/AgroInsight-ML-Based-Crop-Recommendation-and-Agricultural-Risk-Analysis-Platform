@@ -1,0 +1,74 @@
+{
+  "project": "Agro Insight",
+  "institution": "National Institute of Technology, Tiruchirappalli",
+  "dataset": {
+    "name": "Agricultural Crop Recommendation Benchmark Dataset",
+    "total_samples": 2200,
+    "features_count": 7,
+    "classes_count": 22,
+    "train_split": 1760,
+    "test_split": 440,
+    "features": ["N", "P", "K", "temperature", "humidity", "ph", "rainfall"]
+  },
+  "selected_model": {
+    "algorithm": "RandomForestClassifier",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": 14,
+      "criterion": "gini",
+      "random_state": 42
+    },
+    "test_accuracy": 0.9932,
+    "macro_precision": 0.9935,
+    "macro_recall": 0.9932,
+    "macro_f1": 0.9932,
+    "stratified_5fold_cv_mean": 0.9932,
+    "stratified_5fold_cv_std": 0.0015
+  },
+  "model_comparison": [
+    {
+      "model": "Random Forest Classifier",
+      "accuracy": 0.9932,
+      "macro_f1": 0.9932,
+      "cv_mean": 0.9932,
+      "cv_std": 0.0015
+    },
+    {
+      "model": "HistGradientBoosting",
+      "accuracy": 0.9886,
+      "macro_f1": 0.9888,
+      "cv_mean": 0.9886,
+      "cv_std": 0.0022
+    },
+    {
+      "model": "Decision Tree (CART)",
+      "accuracy": 0.9818,
+      "macro_f1": 0.9819,
+      "cv_mean": 0.9805,
+      "cv_std": 0.0034
+    },
+    {
+      "model": "Multinomial Logistic Regression",
+      "accuracy": 0.9545,
+      "macro_f1": 0.9538,
+      "cv_mean": 0.9523,
+      "cv_std": 0.0058
+    },
+    {
+      "model": "Stratified Dummy Classifier",
+      "accuracy": 0.0455,
+      "macro_f1": 0.0040,
+      "cv_mean": 0.0455,
+      "cv_std": 0.0011
+    }
+  ],
+  "feature_importance_gini": {
+    "rainfall": 0.234,
+    "humidity": 0.212,
+    "K": 0.186,
+    "P": 0.148,
+    "N": 0.115,
+    "temperature": 0.063,
+    "ph": 0.042
+  }
+}

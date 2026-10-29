@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Custom styling matching the original agricultural applet aesthetic */
+.risk-low {
+  color: #16a34a;
+}
+.risk-medium {
+  color: #ca8a04;
+}
+.risk-high {
+  color: #dc2626;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}

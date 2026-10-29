@@ -1,0 +1,8 @@
+{
+  "name": "Agro Insight",
+  "description": "ML-Based Crop Recommendation and Agricultural Risk Analysis Platform developed for research at NIT Tiruchirappalli with Random Forest classification, explainability, risk modeling, and model evaluation.",
+  "version": "2.0.0",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
